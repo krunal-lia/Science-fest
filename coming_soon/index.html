@@ -5,66 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://unpkg.com/ionicons@4.1.1/dist/ionicons.js"></script>
         <link href="resources/css/style.css" rel="stylesheet" type="text/css">
+        <link href="resources/css/queries.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,700" rel="stylesheet">
         <title>Welcome</title>
     </head>
 
     <body>
-        <div class="clearfix"></div>
-        <!--<h1>Interface</h1> -->
-        <div class="welcome">
-            <h1>Welcome to National <em>Science Fest.</em></h1>
-        </div>            
+        <section>
+            <div class="clearfix"></div>
+            <div class="welcome">
+                <h1>Welcome to National <em>Science Fest.</em></h1>
+            </div>            
 
-        <div class="coming-soon row">
-            <h2>Coming soon in</h2>
-            <div class="timer">
-                <div id="days" class="time"></div>
-                :<div id="hours" class="time"></div>
-                :<div id="minutes" class="time"></div>
-                :<div id="seconds" class="time"></div>
+            <div class="coming-soon row">
+                <h2>Coming soon in</h2>
+                <div class="timer">
+                    <div id="days" class="time"></div>
+                    <div id="hours" class="time"></div>
+                    <div id="minutes" class="time"></div>
+                    <div id="seconds" class="time"></div>
+                </div>
             </div>
-        </div>
-        
-        <footer class="clearfix">
-            <ul class="social-links">
-                <li><a href="#"><ion-icon name="logo-facebook" class="fb"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-instagram" class="insta"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-googleplus" class="gplus"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-twitter" class="tweet"></ion-icon></a></li>                    
-            </ul>
-            <p>Built with <ion-icon name="heart" class="heart"></ion-icon>!</p>
-        </footer>
-
+            
+            <footer class="clearfix">
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-facebook" class="fb"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram" class="insta"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-googleplus" class="gplus"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter" class="tweet"></ion-icon></a></li>                    
+                </ul>
+                <p>Built with <ion-icon name="heart" class="heart"></ion-icon>!</p>
+            </footer>
+        </section>
     </body>
-    <script>
-        var countDownDate = new Date("August 26, 2018 15:37:25").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-            // Get todays date and time
-            var now = new Date().getTime();
-            
-            // Find the distance between now an the count down date
-            var distance = countDownDate - now;
-            
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            document.getElementById("days").innerHTML = days + "<span>days</span>";
-            document.getElementById("hours").innerHTML = hours + "<span>hours</span>";
-            document.getElementById("minutes").innerHTML = minutes  + "<span>mins</span>";
-            document.getElementById("seconds").innerHTML = seconds  + "<span>secs</span>";
-            
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-            }
-        }, 1000);
-        </script>
-
+    <script src="resources/js/script.js"></script>
 </html>
