@@ -20,7 +20,6 @@
     }
     
     .time {width: 140px;}
-    section {height: 100vh;}
 
 }
 
@@ -43,19 +42,21 @@
     }
     .welcome {margin-top: 20px;}
     .coming-soon {margin-top: 35px;}
-    section {height: 100vh;}
 }
 
 @media only screen and (max-width: 597px) {
     
     body {font-size: 14px;}
-    .timer {margin-left: 1px;}
+    .timer {
+        font-size: 540%;
+        margin-top: 35px;
+        margin-left: 1px;
+    }
     .time {
         width: 80px;
     }
     .welcome {margin-top: 20px;}
     .coming-soon {margin-top: 35px;}
-    section {height: 100vh;}
 }
 
 @media only screen and (max-width: 480px) {
@@ -75,7 +76,6 @@
     }
     .welcome {margin-top: 20px;}
     .coming-soon {margin-top: 35px;}
-    section {height: 100vh;}
     .row {
         width: 100%;
     }
